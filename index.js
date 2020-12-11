@@ -20,5 +20,5 @@ const monologueLines = [
 ];
 
 const wordCountMap = monologueLines.reduce((map, sentence) => {
-  
+  const wordCount = map.split("")
 })
