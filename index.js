@@ -20,13 +20,13 @@ const monologueLines = [
 ];
 
 const wordCountMap = monologueLines.reduce((map, sentence) => {
-  const wordCount = map.split(" ").length
+  const wordCount = sentence.split(" ").length
 
   if (!map[wordCount]) {
-    map[wordCount] = 0;
+    map[wordCount] = 0
   }
 
-  map[wordCount]++;
+  map[wordCount]++
 
-  return map;
+  return map
 }, {})
